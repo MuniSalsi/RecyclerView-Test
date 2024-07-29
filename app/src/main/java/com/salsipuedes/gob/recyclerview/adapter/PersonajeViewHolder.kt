@@ -1,7 +1,6 @@
 package com.salsipuedes.gob.recyclerview.adapter
 
 import android.view.View
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.bumptech.glide.Glide
 import com.salsipuedes.gob.recyclerview.api.response.Personaje
@@ -14,9 +13,9 @@ class PersonajeViewHolder(view: View) : ViewHolder(view) {
     fun render(personaje: Personaje, onClickListener: (Personaje) -> Unit) {
         binding.nombrePersonaje.text = personaje.name
         binding.estadoPersonaje.text = personaje.status
-        binding.especiePersonaje.text = personaje.species
-        binding.generoPersonaje.text = personaje.gender
-        binding.origenPersonaje.text = personaje.origin.name
+//        binding.especiePersonaje.text = personaje.species
+//        binding.generoPersonaje.text = personaje.gender
+//        binding.origenPersonaje.text = personaje.origin.name
         Glide.with(binding.imagenPersonaje.context).load(personaje.image)
             .into(binding.imagenPersonaje)
 

@@ -1,10 +1,12 @@
 package com.salsipuedes.gob.recyclerview
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.salsipuedes.gob.recyclerview.adapter.PersonajeAdapter
@@ -26,7 +28,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun iniciarRecyclerView() {
-        binding.listadoPersonajes.layoutManager = LinearLayoutManager(this)
+        val manager = LinearLayoutManager(this)
+
+        // Agregando un divier item:
+        val decoration = DividerItemDecoration(this, manager.orientation)
+
+        binding.listadoPersonajes.layoutManager = manager
 
         PersonajeProvider.getCharacters(
             page = 1,
@@ -36,6 +43,7 @@ class MainActivity : AppCompatActivity() {
                     personajes
                 ) { personaje -> onItemSelected(personaje) }
 
+                binding.listadoPersonajes.addItemDecoration(decoration)
             },
             onError = { error ->
                 // Manejar el error aquí
@@ -45,8 +53,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onItemSelected(personaje: Personaje) {
-        Toast.makeText(this, "Click en el detalle: ${personaje.location.name}", Toast.LENGTH_SHORT)
-            .show()
+        Log.d("PERSONAJE", "$personaje")
+        val intent = Intent(this, DetallePersonajeActivity::class.java)
+        intent.putExtra("EXTRA_PERSONAJE", personaje)
+        startActivity(intent)
     }
 }
 

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -11,7 +13,8 @@
         android:layout_height="300dp"
         android:layout_gravity="center"
         android:contentDescription="@string/imagen_personaje"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <!--  Nombre  -->
     <TextView
@@ -46,74 +49,74 @@
             android:textSize="16sp" />
     </LinearLayout>
 
-    <!--  Especie  -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:orientation="horizontal">
+<!--    &lt;!&ndash;  Especie  &ndash;&gt;-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="4dp"-->
+    <!--        android:orientation="horizontal">-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/specie"
-            android:textColor="@android:color/black"
-            android:textSize="16sp" />
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="@string/specie"-->
+    <!--            android:textColor="@android:color/black"-->
+    <!--            android:textSize="16sp" />-->
 
-        <TextView
-            android:id="@+id/especie_personaje"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="16sp" />
-    </LinearLayout>
+    <!--        <TextView-->
+    <!--            android:id="@+id/especie_personaje"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="4dp"-->
+    <!--            android:textColor="@android:color/darker_gray"-->
+    <!--            android:textSize="16sp" />-->
+    <!--    </LinearLayout>-->
 
-    <!--  Género  -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:orientation="horizontal">
+    <!--    &lt;!&ndash;  Género  &ndash;&gt;-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="4dp"-->
+    <!--        android:orientation="horizontal">-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/gender"
-            android:textColor="@android:color/black"
-            android:textSize="16sp" />
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="@string/gender"-->
+    <!--            android:textColor="@android:color/black"-->
+    <!--            android:textSize="16sp" />-->
 
-        <TextView
-            android:id="@+id/genero_personaje"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="16sp" />
-    </LinearLayout>
+    <!--        <TextView-->
+    <!--            android:id="@+id/genero_personaje"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="4dp"-->
+    <!--            android:textColor="@android:color/darker_gray"-->
+    <!--            android:textSize="16sp" />-->
+    <!--    </LinearLayout>-->
 
-    <!--  Origen  -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:orientation="horizontal">
+    <!--    &lt;!&ndash;  Origen  &ndash;&gt;-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="4dp"-->
+    <!--        android:orientation="horizontal">-->
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/origin"
-            android:textColor="@android:color/black"
-            android:textSize="16sp" />
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="@string/origin"-->
+    <!--            android:textColor="@android:color/black"-->
+    <!--            android:textSize="16sp" />-->
 
-        <TextView
-            android:id="@+id/origen_personaje"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="16sp" />
-    </LinearLayout>
+    <!--        <TextView-->
+    <!--            android:id="@+id/origen_personaje"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="4dp"-->
+    <!--            android:textColor="@android:color/darker_gray"-->
+    <!--            android:textSize="16sp" />-->
+    <!--    </LinearLayout>-->
 
     <Button
         android:id="@+id/btnDeatail"
