@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RecyclerView</string>
+    <string name="imagen_personaje">Imagen</string>
+    <string name="name">Nombre:</string>
+    <string name="status">Estado:</string>
+    <string name="specie">Especie:</string>
+    <string name="gender">Género:</string>
+    <string name="origin">Origen:</string>
+    <string name="btnDetail">Ver Detalle</string>
+</resources>
